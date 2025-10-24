@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Coque NFC 4-Color — Boutique</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div style="display:flex;align-items:center;gap:14px">
+      <div class="logo">NFC-Case<span style="color:var(--accent)">.</span></div>
+      <div style="font-size:13px;color:var(--muted)">Coque NFC 4-couleurs</div>
+    </div>
+    <nav>
+      <a href="#features">Caractéristiques</a>
+      <a href="#reviews">Avis</a>
+      <!-- <a href="#video">Vidéo</a> -->
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div>
+      <button class="secondary" onclick="openModal()">Commander — <span style="font-weight:800">249 DH</span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero container" aria-label="Présentation produit">
+    <div class="hero-left">
+      <h1>Coque de téléphone avec écran NFC E-Ink, écran personnalisable</h1>
+      <p class="muted">Présentation de l'écran d'encre 4 couleurs : amélioré par la fonction unique « Filtre d'encre » pour des visuels époustouflants.</p>
+      <div style="display:flex;gap:12px;align-items:center">
+        <button class="btn" onclick="openModal()">Commander — 249 DH</button>
+        <button class="secondary" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">En savoir plus</button>
+      </div>
+      <div style="margin-top:16px;font-size:14px" class="muted">Livraison 1 à 4 jours • Garantie 30 jours • Paiement sécurisé</div>
+    </div>
+
+    <aside>
+      <div class="hero-card" role="region" aria-label="Aperçu produit">
+        <div style="display:flex;justify-content:space-between;width:100%;align-items:center">
+          <div>
+            <div class="price">249 DH</div>
+            <div class="muted">Coque NFC — Impression 4 couleurs</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:13px;color:var(--muted)">En stock</div>
+            <div style="font-size:12px;color:var(--muted)">Expédié sous 24h</div>
+          </div>
+        </div>
+
+        <div class="mockup" style="margin-top:12px">
+          <!-- Replace with real product image -->
+          <img src="img/H8a8149259f504215a0e7a4668a78f9cff.jpg_960x960q80.avif" alt="Mockup de la coque NFC">
+        </div>
+
+        <div style="display:flex;gap:8px;margin-top:10px;width:100%;justify-content:space-between">
+          <button class="secondary" onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">Voir plus</button>
+          <button class="btn" onclick="openModal()">Commander</button>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section id="features" class="features container">
+    <h2 style="margin-bottom:12px">Caractéristiques</h2>
+    <div class="grid">
+      <div class="card">
+        <h3 style="margin:0 0 8px">AFFICHAGE INNOVANT</h3>
+        <p class="muted">Dispose d'un écran E-ink à l'arrière du boîtier qui peut être personnalisé avec différentes images et designs grâce à la technologie NFC</p>
+      </div>
+      <div class="card">
+        <h3 style="margin:0 0 8px">PERSONNALISATION RAPIDE</h3>
+        <p class="muted">Modifiez les images affichées en quelques secondes grâce à l'application compagnon, offrant des options de personnalisation infinies</p>
+      </div>
+      <div class="card">
+        <h3 style="margin:0 0 8px">DOUBLE FONCTIONNALITÉ</h3>
+        <p class="muted">Combine une protection robuste du téléphone avec un écran E-ink personnalisable qui ne nécessite pas de charge pour conserver les images affichées</p>
+      </div>
+      <div class="card">
+        <h3 style="margin:0 0 8px">Compatibilité</h3>
+        <p class="muted">PERFECT FIT: Precisely engineered for iPhone 15 with accurate cutouts for cameras, buttons, and ports while maintaining a slim profile</p>
+      </div>
+      <div class="card">
+        <h3 style="margin:0 0 8px">AJUSTEMENT PARFAIT</h3>
+        <p class="muted">Conçu avec précision pour l'iPhone 15 avec des découpes précises pour les caméras, les boutons et les ports tout en conservant un profil mince.</p>
+      </div>
+      <div class="card">
+        <h3 style="margin:0 0 8px">FONCTIONNALITÉS INTELLIGENTES</h3>
+        <p class="muted">Intègre la technologie NFC pour un transfert d'image transparent et des capacités de personnalisation DIY, rendant la personnalisation sans effort</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery-section" aria-label="Galerie images">
+    <h2 class="gallery-title">Galerie produit</h2>
+    <div class="gallery-grid">
+      <img src="img/H6ed916c7ad024c40815d9672f4f922193.jpg_960x960q80.avif" alt="Vue couleur 1">
+      <img src="img/H7bde5763b1bf4bef8f3783266392d2fbh.jpg_960x960q80.avif" alt="Vue couleur 2">
+      <img src="img/Hd33ae2d5505d489a94e20a05e64eba1dL.jpg_960x960q80.avif" alt="Vue couleur 3">
+    </div>
+  </section>
+
+  <!-- <section id="video" class="video container">
+    <h2>Vidéo produit</h2>
+    <div style="max-width:900px;margin-top:12px">
+      < Replace src by your product video >
+      <iframe width="100%" height="480" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vidéo produit" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section> -->
+
+  <section id="reviews" class="reviews-section">
+    <h2 class="reviews-title">Avis clients</h2>
+
+    <div class="reviews-container">
+      <div class="review-card">
+        <div class="review-header">
+          <strong>Amine B.</strong>
+          <span class="stars">★★★★★</span>
+        </div>
+        <p class="review-text">
+          Qualité d'impression excellente, la puce NFC marche parfaitement. Reçu en 2 jours.
+        </p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <strong>Hamid L.</strong>
+          <span class="stars">★★★★☆</span>
+        </div>
+        <p class="review-text">
+          Très belle coque, légère. Le service client a répondu rapidement.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq-section">
+    <h2 class="faq-title">FAQ</h2>
+
+    <div class="faq-container">
+      <details class="faq-item">
+        <summary><strong>La puce NFC fonctionne-t-elle avec tous les téléphones ?</strong></summary>
+        <p>La plupart des téléphones Android récents et iPhone prennent en charge la lecture NFC. 
+        Pour iPhone, les modèles récents supportent la lecture directe.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary><strong>Je veux personnaliser mon visuel — quelles dimensions ?</strong></summary>
+        <p>300 DPI recommandé. Envoyez un PNG / JPG de préférence en 1080×2340 px pour les modèles standards. 
+        Nous adaptons le cadrage.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary><strong>Quelle est la rapidité de la livraison ?</strong></summary>
+        <p>Nous offrons un service d'expédition rapide et fiable, avec des produits livrés dans un délai de 1 à 4 jours ouvrables, selon l'emplacement du client</p>
+      </details>
+
+      <details class="faq-item">
+        <summary><strong>Livraison et retours</strong></summary>
+        <p>Nous voulons que nos clients bénéficient de la meilleure expérience possible. C'est pourquoi nous offrons une garantie de remboursement de 30 jours !
+Si vous n’êtes pas satisfait de votre commande, il vous suffit de nous contacter pour un remboursement complet.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">NFC-Case</div>
+        <div class="footer-copy">© <span id="year"></span> Tous droits réservés</div>
+      </div>
+
+      <div class="footer-links">
+        <!-- <a href="mailto:contact@nfc-case.ma">contact@nfc-case.ma</a> -->
+        <span class="divider">•</span>
+        <!-- <a href="#">Mentions légales</a> -->
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<button class="sticky-cta" onclick="openModal()">Commander — 249 DH</button>
+
+<!-- Modal -->
+<div id="modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal" role="document">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+      <h3 style="margin:0">Commander — Coque NFC</h3>
+      <button class="close-btn" onclick="closeModal()" aria-label="Fermer">✕</button>
+    </div>
+
+    <form id="orderForm" onsubmit="handleOrder(event)">
+      <div class="field">
+        <label for="model">Modèle de téléphone</label>
+        <select id="model" required>
+          <option value="">Choisissez</option>
+          <option>iPhone 14</option>
+          <option>iPhone 13</option>
+          <option>Samsung S23</option>
+          <option>Samsung A54</option>
+          <option>Autre (précisez dans commentaire)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="color">Design / Couleur</label>
+        <select id="color" required>
+          <option value="">Choisissez</option>
+          <option>Classique Noir</option>
+          <option>Blanc Mat</option>
+          <option>Design personnalisé (upload)</option>
+        </select>
+      </div>
+
+      <div id="uploadField" class="field" style="display:none">
+        <label for="upload">Uploader votre visuel (optionnel)</label>
+        <input id="upload" type="file" accept="image/*" />
+        <div class="note">300 DPI recommandé. PNG/JPG.</div>
+      </div>
+
+      <div class="field">
+        <label for="qty">Quantité</label>
+        <select id="qty">
+          <option>1</option><option>2</option><option>3</option>
+        </select>
+      </div>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px">
+        <div>
+          <div class="muted">Total estimé</div>
+          <div style="font-weight:800">249 DH <span style="color:var(--muted);font-weight:400">(+ livraison si applicable)</span></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <button type="submit" class="btn">Payer maintenant</button>
+          <button type="button" class="secondary" onclick="closeModal()">Annuler</button>
+        </div>
+      </div>
+    </form>
+    <div style="margin-top:12px;font-size:13px;color:var(--muted)">Paiement sécurisé • Traitement de commande sous 24h</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
